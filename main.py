@@ -19,7 +19,6 @@ def success(score):
 @app.route('/failure/<int:score>')
 def failure(score):
     return f"The person has failed and the mark is {score}"
-
 @app.route('/results/<int:score>')
 def results(score):
     
