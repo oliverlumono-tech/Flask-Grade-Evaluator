@@ -1,7 +1,12 @@
+<!DOCTYPE html>
 <html>
-<h2>Final Results</h2>
+<head>
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
 <body>
-<table border=2>
+<h2>Final Results</h2>
+<table>
   {% for key, value in result.items() %}
     <tr>
         {# This is the comment section #}

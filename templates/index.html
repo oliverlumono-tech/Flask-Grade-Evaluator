@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Grade Evaluator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">  
+</head>
 <body>
 
-<h2>HTML FORMs </h2>
-<form action="/submit" method="post">
+<h2>Grade Evaluator Form</h2>
+
+<form action="/submit" method="post" class="grade-form">
   <label for="science">Science:</label><br>
   <input type="text" id="science" name="science" value="0"><br>
+  
   <label for="math">Maths:</label><br>
-  <input type="text" id="math" name="math" value="0"><br><br>
+  <input type="text" id="math" name="math" value="0"><br>
+  
   <label for="C">C:</label><br>
-  <input type="text" id="C" name="C" value="0"><br><br>
+  <input type="text" id="C" name="C" value="0"><br>
+  
   <label for="data_science">Data Science:</label><br>
   <input type="text" id="data_science" name="data_science" value="0"><br><br>
+  
   <input type="submit" value="Submit">
 
 </form>
-<p>if you click the "Submit" button, the form data will be sent to the server.</p>
+<p>If you click the "Submit" button, the form data will be sent to the server.</p>
 </body>
 </html>
